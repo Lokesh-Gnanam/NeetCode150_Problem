@@ -1,6 +1,6 @@
 # NEETCODE 2026
 
-## Two Sum [neetcode](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150)
+## 1.Two Sum [neetcode](https://neetcode.io/problems/two-integer-sum/question?list=neetcode150)
 Solved 
 Easy
 Topics
@@ -48,7 +48,7 @@ public:
 ```
 -------------------------------------
 -------------------------------------
-## Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.[neetcode](https://neetcode.io/problems/duplicate-integer/question)
+## 2.Given an integer array nums, return true if any value appears more than once in the array, otherwise return false [neetcode](https://neetcode.io/problems/duplicate-integer/question)
 
 Example 1:
 
@@ -79,3 +79,41 @@ class Solution {
 ------------------------------
 ------------------------------
 
+## 3.Valid Anagram
+Solved 
+Easy
+Topics
+Company Tags
+Hints
+Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
+
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+
+Example 1:
+
+Input: s = "racecar", t = "carrace"
+
+Output: true
+Example 2:
+
+Input: s = "jar", t = "jam"
+
+Output: false
+
+s and t consist of lowercase English letters.
+
+```cpp
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        if(s.length()!= t.length()){
+            return false;
+        }
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+        return s == t;
+    }
+};
+```
+----------------------------
+----------------------------
