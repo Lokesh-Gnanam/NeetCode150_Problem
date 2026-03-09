@@ -79,7 +79,7 @@ class Solution {
 ------------------------------
 ------------------------------
 
-## 3.Valid Anagram
+## 3.Valid Anagram [neetcode](https://neetcode.io/problems/is-anagram/question)
 Solved 
 Easy
 Topics
